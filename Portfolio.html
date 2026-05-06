@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neil Philip — Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Portfolio.css" />
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#home" class="nav-logo">Neil Philip</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interest">Interest</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-content">
+      <div class="hero-greeting">Hi, I'm</div>
+      <h1 class="hero-name">Neil <span>Philip</span></h1>
+      <h2 class="hero-role">BSIT Student & Developer</h2>
+      <p class="hero-sub">
+        I'm currently learning and developing my skills in web development, bulding projects that improve my creativity, problem-solving, and technical knowledge.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Contact Me</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap">
+      <img src="portfolio my image.png" class="hero-photo" alt="Neil Philip"/>
+    </div>
+
+    <div class="hero-glow"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-label">Who I Am</div>
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-grid">
+      <div class="about_image">
+        <img src="portfolio my image.png" alt="About me">
+      </div>
+
+      <div class="about-text">
+        <p>I am Neil Philip S. Zabala and I am a BSIT student major in Network Infrastructure with Cybersecurity at Universidad De Dagupan.</p>
+        <p>My goal is to improve my skills, gain experience, and build projects that are both functional and meaningful. </p>
+        <p>My journey as a BSIT student started with curiosity about how websites and applications work behind the scenes. I was also curios on how game was created and wish to build my own game.
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-label">My Work</div>
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-body">
+          <h3>Game Website</h3>
+          <p>Our team monster game website. It serves as the main hub where players can learn about the game, explore its features, and access game-related content. The site was built with a focus on clean design and smooth user experience.</p>
+          <a href="https://neilzabala27.github.io/Website/" target="_blank" class="btn-primary" style="margin-top: 16px;">Visit Website</a>
+        </div>
+         <div class="project-img">
+            <img src="website image.png"  class="project-image website-img" alt="projects">
+          </div>
+      </div>
+
+      <div class="project-card reverse">
+          <div class="project-body">
+            <h3>Invention Outbreak</h3>
+            <p>Our team monster own game. 
+              Players battle against unique monsters using creative inventions and strategies. 
+              This project helped our team explore game mechanics, teamwork, and the fundamentals of game development from the ground up.
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="game image.png"  class="project-image" alt="projects">
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTEREST -->
+  <section id="interest">
+    <div class="section-label">My Hobbies & Passion</div>
+    <h2 class="section-title">Interest</h2>
+
+    <div class="interest-grid">
+      <div class="interest-pill">
+        <img src="Reading-image.jpg" alt="Reading">
+        <h3>Reading</h3>
+        <p>When I'm tired coding I enjoy reading and it help me relax.</p>
+      </div>
+      <div class="interest-pill">
+         <img src="Chess-img.jpg" alt="Chess">
+         <h3>Chess</h3>
+         <p>Chess sharpens my strategic thinking and problem-solving skills.</p>
+      </div>
+      <div class="interest-pill">
+        <img src="Gaming-image.jpg" alt="Gaming">
+        <h3>Gaming</h3>
+        <p>I enjoy gaming while learning about game mechanics and design.</p>
+      </div>
+      <div class="interest-pill">
+        <img src="Coding-image.png" alt="Coding">
+        <h3>Coding</h3>
+        <p>Coding lets me bring ideas to life through logic and creativity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+  <div class="contact-wrapper">
+
+    <div class="contact-info">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-sub">I'm open to learning, collaboration, and new experience. Don't hesitate to reach out below.</p>
+
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:youremail@gmail.com">zabalans.679.stud@udd.edu.ph</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+639XXXXXXXXX">+63 969 493 9401</a>
+        </div>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit" id="submitBtn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Neil Philip</p>
+  </footer>
+
+  <script src="Portfolio.js"></script>
+</body>
+</html>
